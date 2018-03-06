@@ -1,0 +1,23 @@
+{
+  "name": "music-api",
+  "version": "1.0.0",
+  "description": "Flying High Music API",
+  "main": "server.js",
+  "dependencies": {
+    "figlet": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "music",
+    "artists",
+    "albums",
+    "lyrics",
+    "api"
+  ],
+  "author": "Karen Medina",
+  "license": "ISC"
+}

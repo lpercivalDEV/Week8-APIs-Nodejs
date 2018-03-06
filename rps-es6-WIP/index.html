@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<!-- <meta name="description" content="Your description goes here"> -->
+    	<!-- <meta name="keywords" content="one, two, three"> -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+		<title>Node Rock Paper Scissors</title>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+	<button id="rock" type="button" name="button">Rock</button>
+	<button id="paper" type="button" name="button">Paper</button>
+	<button id="scissors" type="button" name="button">Scissors</button>
+
+
+<!--in line script tag for running on node server-->
+	<script type="text/javascript">
+	///-----------------------------------------------------------///
+	///---------------PSEUDO---CODE--------------------///
+	///---------------------------------------------------------///
+	//
+	// We need rock paper scissors using ES6 JavaScript - no jquery!
+	// We need to put inline js in the html file because that is the only file
+		//..the server has been given permission to read
+	//
+	// User can click buttons to choose rock paper or scissors
+	// User can see result of game play
+	// User expects that clicking button will register their choise and run the game, and also
+		//..for game results to be displayed
+	//
+	// Will need a Math.random function to randomize chances of winning against computer
+	// Will need a function with if/else conditonals to handle win/loss scenarios
+	// Will need to update the DOM once game is finished runnint to show reuslts
+	//
+	///--------------------------------------------------------------------------------///
+	///~~~~~~~~~~~~~~~~~ACTUAL---CODE~~~~~~~~~~~~~~~~~~///
+	///-------------------------------------------------------------------------------///
+
+	alert("Hi! Your js is working! Yay!");
+
+	let computerScore = 0;
+	let playerScore =0;
+	document.getElementById("rock").onclick=playerChoseRock;
+	document.getElementById("scissors").onclick=playerChoseScissors;
+	document.getElementById("paper").onclick=playerChosePaper;
+
+	let computerChoice = 0;
+
+	function getComputerChoice(){
+		let random = Math.random();
+		if(random<= 0.33 ){
+			computerChoice = "Rock"
+			console.log("computer chose rock")
+		else if(0.34 >= random <=0.66){
+			computerChoice = "Paper"
+			console.log("computer chose paper")
+		}
+			else{
+				computerChoice = "scissors"
+				console.log("computer chose scissors")
+			}
+	}
+
+	function playerChoseRock(){
+
+	}
+
+	function playerChosePaper(){
+
+	}
+	function playerChoseScissors(){
+
+	}
+
+	function checkforWin(){
+		if(computerChoice == PlayerChoice){
+			console.log("It's a draw!")
+		}
+		else if(computerChoice == "paper" && PlayerChoice =="rock" || ){
+			computerScore++;
+			console.log("Computer wins!")
+		}
+		else{
+			playerScore++;
+			console.log("You win!")
+		}
+	}
+
+	</script>
+
+
+<!-- external JavaScript link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
